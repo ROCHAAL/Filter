@@ -1,5 +1,5 @@
 class Filter
-  def check_lower_value
+  def check_lower_value(input_value)
     40
   end
 end
