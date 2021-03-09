@@ -15,7 +15,13 @@ class Filter
     return output_values
   end
 
-  def check_highest_value(input_value)
-    [1000]
+def check_highest_value(input_value)
+  output_highest_value = []
+  input_value.each do |value|
+    if value >= 1000
+      output_highest_value.push(1000)
+    end
   end
+  return output_highest_value
+end
 end
