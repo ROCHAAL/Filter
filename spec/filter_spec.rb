@@ -27,4 +27,9 @@ describe 'Filter'do
      filter.check_highest_value([60,10,45,60,1500])
      expect(filter.check_highest_value([1500])).to eq([1000])
   end
+  it 'returns the same high input frequency if the value is iqual  or above 40'do
+  filter = Filter.new
+  filter.check_highest_value([60,10,45,60,1500])
+  expect(filter.check_highest_value([45])).to eq([45])
+  end
 end
